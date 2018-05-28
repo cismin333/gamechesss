@@ -4,4 +4,4 @@ const app = express()
 
 app.use('/', express.static(path.join(__dirname,'./')))
 
-app.listen(3500, () => console.log('Example app listening on port 3500!'))
+app.listen(process.env.PORT, () => console.log('Example app listening on port 3500!'))
